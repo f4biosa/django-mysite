@@ -32,6 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "polls.apps.PollsConfig",
+
+    'snippets.apps.SnippetsConfig',
+    'rest_framework',
+
     "debug_toolbar",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -128,3 +132,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}

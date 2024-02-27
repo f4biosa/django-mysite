@@ -1,2 +1,4 @@
 -r base.txt
 django-debug-toolbar==4.3.0
+pygments==2.17.2 # We'll be using this for the code highlighting
+httpie==3.2.2
